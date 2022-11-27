@@ -1,3 +1,4 @@
+import 'package:calculator/calculator_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -26,38 +27,11 @@ class Myhome extends StatefulWidget {
 class _MyhomeState extends State<Myhome> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        appBar: AppBar(),
-         
-         body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-          Row(
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(50.0),
-                child: TextField(
-                  decoration: InputDecoration(border: OutlineInputBorder(borderRadius: BorderRadius.circular(50))),
-                     
-                ),
-                
-              ),
-            ElevatedButton(onPressed: () {
-              
-            }, child: Text("data"))
-            ],
-          )
-         ]),
-
-
-        
-        
+    return  MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: calcularor(),
+    );
           
-        
-        ),
-          
-      );
     
   }
 }
